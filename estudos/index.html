@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos | ovall.rocks</title>
+    <meta name="description" content="Análises de mercado, pesquisas e documentos técnicos">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1a1a2e;
+            --secondary-color: #16213e;
+            --accent-color: #0f3460;
+            --highlight-color: #e94560;
+            --text-color: #eaeaea;
+            --text-muted: #a0a0a0;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--accent-color) 100%);
+            min-height: 100vh;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        .breadcrumb { margin-bottom: 2rem; }
+        .breadcrumb a { color: var(--text-muted); text-decoration: none; transition: color 0.2s ease; }
+        .breadcrumb a:hover { color: var(--highlight-color); }
+        .breadcrumb span { color: var(--text-muted); margin: 0 0.5rem; }
+        header { margin-bottom: 3rem; }
+        .page-title { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .page-description { color: var(--text-muted); font-size: 1.1rem; }
+        .content-grid { display: grid; gap: 1.5rem; }
+        .empty-state { text-align: center; padding: 4rem 2rem; background: var(--card-bg); border: 1px dashed var(--border-color); border-radius: 12px; }
+        .empty-state h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+        .empty-state p { color: var(--text-muted); }
+        footer { text-align: center; padding: 4rem 0 2rem; color: var(--text-muted); font-size: 0.9rem; }
+        footer a { color: var(--highlight-color); text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="../">ovall.rocks</a>
+            <span>→</span>
+            <strong>Estudos</strong>
+        </nav>
+        <header>
+            <h1 class="page-title">📊 Estudos</h1>
+            <p class="page-description">Análises de mercado, pesquisas e documentos técnicos sobre real estate e investimentos.</p>
+        </header>
+        <main class="content-grid">
+            <div class="empty-state">
+                <h3>Em construção</h3>
+                <p>Novos estudos serão publicados em breve. Volte em breve para conferir as novidades!</p>
+            </div>
+        </main>
+        <footer>
+            <p><a href="../">← Voltar para o início</a></p>
+        </footer>
+    </div>
+</body>
+</html>
